@@ -15,7 +15,10 @@
 */
 
 //Code here
-
+let me = {
+  name:"Aaron",
+  age: 30,
+}
 ////////// PROBLEM 2 //////////
 
 /*
