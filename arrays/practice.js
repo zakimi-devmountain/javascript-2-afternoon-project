@@ -94,11 +94,10 @@ function evenFinder(nums){
   let newArr = [];
   for(let i = 0; i <= nums.length-1; i++){
     if(nums[i] % 2 === 0){
-      newArr.push(nums[i])
-      console.log(newArr);
+      newArr.push(nums[i]);
     }
   }
-
+  return newArr;
 }
 
 evenFinder(nums)
