@@ -51,10 +51,11 @@ first(names, function(firstName){
 */
 
 //Code Here
-function last(arry, cb){
+function last(array, cb){
   let lastElement = array.length-1;
   cb(array[lastElement]);
 }
+
 
 
 // Do not edit the code below.
@@ -175,10 +176,7 @@ each(names, function(item, indice){
 */
 
 // Code here
-function getUserById(arr, id, cb){
-  for(let i = 0; i < arr.length; i++)
-    if(arr)
-}
+
 // Do not edit the code below.
 var users = [
   {
