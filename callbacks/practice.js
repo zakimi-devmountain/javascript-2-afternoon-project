@@ -99,13 +99,12 @@ multiply(4, 3, function(answer){
 
 //Code Here 
 function contains(array, name, cb){
-  check = false;
   for(let i = 0; i < array.length; i++){
     if (name === array[i]){
-      check = true;
+      cb(true);
     }
   }
-  cb(check)
+  cb(false)
 }
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
