@@ -254,11 +254,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   
 //Code Here
 function addTen(numbers){
-  for(let i = 0; i < numbers.length; i++){
-    parseFloat(numbers[i]) += 10;
+  let output = []
+  numbers.map(num => {
+    output.push(parseInt(num) + 10);
+  })
+  return output;
   }
-  return numbers;
-}
+  
 
 
 ////////// PROBLEM 11 //////////
@@ -287,11 +289,11 @@ function longer(arr1, arr2){
   // return arr1.length > arr2.length ? console.log(arr1) : console.log(arr2);}
   if(arr1.length > arr2.length){
     return arr1;
-  }
-  if(arr2.length > arr1.length){
-    return arr2;
+  } else {
+    return arr2
   }
 }
+
 
 
 /*
@@ -304,16 +306,22 @@ function longer(arr1, arr2){
 
 //Code Here
 function both(arr1, arr2){
-  let newArr = [];
-  for(let i = 0; i < arr1.length; i++){
-    for(let j = 0; j < arr2.length; j++){
-      if(arr1[i]===arr2[j]){
-        newArr.push[i];
-      }
+  // console.log(arr1, arr2)
+  let output = []
+  let count1 = {};
+
+  for(let val of arr1){
+    count1[val] = (count1[val] || 0) + 1
+  }
+  for(let val of arr2){
+    count1[val] = (count1[val] || 0) + 1
+  }
+  for(let property in count1){
+    if(count1[property] === 2){
+      output.push(parseInt(property))
     }
   }
-  return newArray;
-
+  return output;
 }
 
 
