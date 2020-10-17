@@ -165,15 +165,15 @@ var getRandomArbitrary = function() {
 
 //Code Here
 function finder(arr){
-  let randomNumber = getRandomArbitrary;
+  let randomNumber = getRandomArbitrary();
+  console.log(randomNumber)
+  let output = false;
   for(let i = 0; i < arr.length; i++){
     if(arr[i] === randomNumber){
       return true;
     }
-    else {
-      return false;
-    }
   }
+  return output;
 }
 
 
