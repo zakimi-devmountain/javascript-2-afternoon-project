@@ -235,7 +235,7 @@ function addItem(myGroceryList, item){
 function maker(){
   let arr = [];
   for(let i = 1; i <=215; i++){
-    arr += i;
+    arr.push(i);
   }
   return arr;
 }
